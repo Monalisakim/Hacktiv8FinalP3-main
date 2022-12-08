@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software House</title>
+     <!-- CSS only -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" /> -->
+     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+     <!-- JavaScript Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <style>
+        .logo-con{padding: 2vh 2.5vh 4vh 2.5vh;}
+        .logo-con-scroll{padding: 2vh 2.5vh 2.7vh 2.5vh;}
+        .logo-bottom,.logo-con{transition: all 0.2s ease-in;}
+        .logo-scroll{width: 32px;}
+        .icon-hamburger{background-image: url("img/menu.svg");}
+        @media only screen and (max-width: 1920px){.carousel-control-next-icon{background-image: url("img/next.svg");width: 10vh;height: 10vh;}
+        .carousel-control-prev-icon{background-image: url("img/prev.svg");width: 10vh;height: 10vh;}}
+        .card-con{margin: auto;}
+        .thumb-wrapper{width: 270px;height: 500px;}
+     </style> 
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!--======================== SECTION A ========================== -->
+    <!-- NAVBAR -->
+    <div class="jarakpadding">
+      <div style="background-color: #020e35; position: fixed; z-index: 9999" class="text-center">
+        <div class="logo-con">
+          <img src="img/logo.png" alt="" style="margin-left: auto; margin-right: auto" id="logo-icon" class="" />
+        </div>
+        <div class="logo-bottom" style="background: #020e35; height: 5px"></div>
+      </div>
+    </div>
+    <nav class="navbar fixed-top navbar-expand-lg p-3 " style="background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);">
+        <div class="jarakpadding" style="width: 100%;">
+            <div class=" d-flex justify-content-end" style="width: 100%;">
+                <button type="button btn-toggle" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon icon-hamburger"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="#" style="font-weight:600  !important;margin-right: 20px !important; color: #020e35;" class="nav-item nav-link active">Home</a>
+                    <a href="#about" style="margin-right: 20px !important; color: #020e35;" class="nav-item nav-link">About</a>
+                    <a href="#services" style="margin-right: 20px !important; color: #020e35;" class="nav-item nav-link">Services</a>
+                    <a href="#work" style="margin-right: 20px !important; color: #020e35;" class="nav-item nav-link">Portfolio</a>
+                    <button style="height: 40px;color:white;background: #020e35; border: none;cursor: pointer;padding: 0 15px;">Contact Us</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </nav>
+    <!-- BANNER -->
+    <div class="banner-con">
+      <div class="d-flex">
+        <div class="banner-con-teks justify-content-center d-flex flex-column" style="">
+          <div class="banner-teks">Bring Your Imagination Into Reality</div>
+          <div class="text-center mt-4 banner-btn" style="">See Our Work</div>
+        </div>
+        <div class="text-center banner-img" style=""><img src="img/illust.svg" alt="illus" style="object-fit: contain" /></div>
+      </div>
+    </div>
+
+    <!--======================== SECTION B ========================== -->
+    <!-- ABOUT -->
+    <div id="about" style="padding: 10vh 0 15vh 0">
+      <div class="oval"></div>
+      <div class="section-con text-center justify-content-center">
+        <div class="judul" style="">About Us</div>
+        <div class="mt-2 garisbawah"></div>
+        <div class="teks" style="">
+          We are a team of talented and passionate developers, designers and technopreneurs who thrive on designing and developing great user interfaces and experiences for websites, web applications and mobile applications.
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div id="services" style="padding: 10vh 0 25vh 0;">
+        <div class="section-con text-center justify-content-center">
+            <div class="judul" style="">Our Valuable Services</div>
+            <div class="mt-2 garisbawah"></div>
+            <div class="teks" style="">We are committed to provide the best value and high-quality software development services to our customers from all over the world.</div>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+		   
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner" >
+				<div class="item carousel-item active">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper" style="background-color:white;" >
+								<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+								<div class="img-box">
+									<img src="./img/services3.svg" class="img-fluid" alt="">									
+								</div>
+								<div class="thumb-content">
+									<h4>UI UX Design</h4>									
+									<p class="item-price">A good UI design and UX according to expectations will really help you to attract consumers. Not just consumers, but loyal consumers.</b></p>
+									<a href="#" class="btn btn-primary">Read more</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper" style="background-color:white;">
+								<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+								<div class="img-box">
+									<img src="./img/services1.svg" class="img-fluid" alt="Headphone">
+								</div>
+								<div class="thumb-content">
+									<h4>App Development</h4>									
+									<p class="item-price">User-friendly iOS and Android application development helps a range of start-ups and enterprises to redefine mobile user experiences.</p>
+									<a href="#" class="btn btn-primary">Read more</a>
+								</div>						
+							</div>
+						</div>		
+						<div class="col-sm-3">
+							<div class="thumb-wrapper" style="background-color:white;">
+								<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+								<div class="img-box">
+									<img src="./img/services2.svg" class="img-fluid" alt="Macbook">
+								</div>
+								<div class="thumb-content">
+									<h4>Web Development</h4>									
+									<p class="item-price">Website and eCommerce doesn’t have to be expensive or complex, but effective. We work with all sorts of clients with a wide range of budgets and requirements.</p>
+									<a href="#" class="btn btn-primary">Read more</a>
+								</div>						
+							</div>
+						</div>
+            <div class="col-sm-3">
+              <div class="thumb-wrapper" style="background-color:white;" >
+								<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+								<div class="img-box">
+									<img src="./img/services3.svg" class="img-fluid" alt="">									
+								</div>
+								<div class="thumb-content">
+									<h4>UI UX Design</h4>									
+									<p class="item-price">A good UI design and UX according to expectations will really help you to attract consumers. Not just consumers, but loyal consumers.</b></p>
+									<a href="#" class="btn btn-primary">Read more</a>
+								</div>						
+							</div>
+						</div>								
+					</div>
+				</div>
+				<div class="item carousel-item" style="">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper" style="background-color:white;">
+								<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+								<div class="img-box">
+									<img src="./img/services2.svg" class="img-fluid" alt="Macbook">
+								</div>
+								<div class="thumb-content">
+									<h4>Web Development</h4>									
+									<p class="item-price">Website and eCommerce doesn’t have to be expensive or complex, but effective. We work with all sorts of clients with a wide range of budgets and requirements.</p>
+									<a href="#" class="btn btn-primary">Read more</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper" style="background-color:white;">
+								<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+								<div class="img-box">
+									<img src="./img/services1.svg" class="img-fluid" alt="Headphone">
+								</div>
+								<div class="thumb-content">
+									<h4>App Development</h4>									
+									<p class="item-price">User-friendly iOS and Android application development helps a range of start-ups and enterprises to redefine mobile user experiences.</p>
+									<a href="#" class="btn btn-primary">Read more</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper" style="background-color:white;" >
+								<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+								<div class="img-box">
+									<img src="./img/services3.svg" class="img-fluid" alt="">									
+								</div>
+								<div class="thumb-content">
+									<h4>UI UX Design</h4>									
+									<p class="item-price">A good UI design and UX according to expectations will really help you to attract consumers. Not just consumers, but loyal consumers.</b></p>
+									<a href="#" class="btn btn-primary">Read more</a>
+								</div>						
+							</div>
+						</div>			
+            <div class="col-sm-3">
+							<div class="thumb-wrapper" style="background-color:white;">
+								<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+								<div class="img-box">
+									<img src="./img/services1.svg" class="img-fluid" alt="Headphone">
+								</div>
+								<div class="thumb-content">
+									<h4>App Development</h4>									
+									<p class="item-price">User-friendly iOS and Android application development helps a range of start-ups and enterprises to redefine mobile user experiences.</p>
+									<a href="#" class="btn btn-primary">Read more</a>
+								</div>						
+							</div>
+						</div>			
+					</div>
+				</div>
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<img src="./img/prev.svg" alt="">
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+				<img src="./img/next.svg" alt="">
+			</a>
+		</div>
+    </div>
+        
+    <!-- ======================== SECTION C ========================== --> 
+    <!-- OUR WORK -->
+    <div class="" style="background-color: #020e35; margin: -20vh 0 0 0; padding: 35vh 0 0 0">
+      <div id="work" style="padding: 5vh 0 25vh 0">
+        <div class="section-con text-center justify-content-center" style="color: white">
+          <div class="judul" style="">Our Work</div>
+          <div class="mt-2 garisbawah"></div>
+          <div class="teks" style="">Over the years, our experience has helped our clients set out their new ventures in the digital world. Check out some of our best works.</div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col mt-5" style="text-align: center">
+              <div class="image" style="background-color: #f09532; width: 587px; height: 390px">
+                <img src="img/ourworkcloudtech.png" alt="" style="width: 570px; height: 390px" />
+              </div>
+            </div>
+            <div class="col mt-5">
+              <div class="title" style="color: #ffffff; font-size: 30px; font-weight: 400">Cloudtech</div>
+              <br />
+              <div class="sub-title" style="color: #ffffff; font-size: 15px; font-weight: 400; line-height: 19px; letter-spacing: 3px">WEB DEVELOPMENT</div>
+              <br />
+              <p style="color: #ffffff; font-size: 16px; font-weight: 400">
+                With Cloudtech stand apart in the sphere of World Wide Web with maximum flexibility offering elevated packages for all your business needs ensuring smooth execution of your business activities.
+              </p>
+              <button class="mt-5" style="padding:10px 30px;background: #f09532; border: none"><a href="https://glittering-kheer-ced6dc.netlify.app/" style="color: #ffffff;" >See More</a></button>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col mt-5" style="text-align: right">
+              <div class="title" style="color: #ffffff; font-size: 30px; font-weight: 400">MokPOS</div>
+              <br />
+              <div class="sub-title" style="color: #ffffff; font-size: 15px; font-weight: 400; line-height: 19px; letter-spacing: 3px">WEB DEVELOPMENT</div>
+              <br />
+              <p style="color: #ffffff; font-size: 16px; font-weight: 400">
+                Apapun usaha Anda, rasakan betapa mudahnya mengelola pembelian dan penjualan, pelacakan inventori secara mendetil hingga kemampuan menerima pesanan dan reservasi secara online.
+              </p>
+              <button class="mt-5" style="padding:10px 30px;background: #8c32f0; border: none"><a href="https://glittering-kheer-ced6dc.netlify.app/" style="color: #ffffff;" >See More</a></button>
+            </div>
+            <div class="col mt-5" style="text-align: center">
+              <div class="image" style="background-color: #8c32f0; width: 587px; height: 390px">
+                <img src="img/bagusfp1website.png" alt="" style="width: 400px; height: 390px" />
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col mt-5" style="text-align: center">
+              <div class="image" style="background-color: #e73587; width: 587px; height: 390px">
+                <img src="img/yulifp1website.png" alt="" style="width: 570px; height: 390px" />
+              </div>
+            </div>
+            <div class="col mt-5">
+              <div class="title" style="color: #ffffff; font-size: 30px; font-weight: 400">beatyYU</div>
+              <br />
+              <div class="sub-title" style="color: #ffffff; font-size: 15px; font-weight: 400; line-height: 19px; letter-spacing: 3px">WEB DEVELOPMENT</div>
+              <br />
+              <p style="color: #ffffff; font-size: 16px; font-weight: 400">
+                Sebagai brand kecantikan Indonesia, kami percaya bahwa ketika tampil menarik dan merasa lebih baik, Anda memiliki kesempatan untuk mencapai potensi teroptimal.
+              </p>
+              <button class="mt-5" style="padding:10px 30px;background: #e73587; border: none"><a href="https://glittering-kheer-ced6dc.netlify.app/" style="color: #ffffff;" >See More</a></button>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col mt-5" style="text-align: right">
+              <div class="title" style="color: #ffffff; font-size: 30px; font-weight: 400">food</div>
+              <br />
+              <div class="sub-title" style="color: #ffffff; font-size: 15px; font-weight: 400; line-height: 19px; letter-spacing: 3px">UI/UX DESIGN</div>
+              <br />
+              <p style="color: #ffffff; font-size: 16px; font-weight: 400">
+                There are many things are needed to start the fast food business. You need not only Just food stalls with person but also equipment make your marketing plane effective.
+              </p>
+              <button class="mt-5" style="padding:10px 30px;background: #32d6f0; border: none"><a href="https://glittering-kheer-ced6dc.netlify.app/" style="color: #ffffff;" >See More</a></button>
+            </div>
+            <div class="col mt-5" style="text-align: center">
+              <div class="image" style="background-color: #32d6f0; width: 587px; height: 390px">
+                <img src="img/uiuxdesign.png" alt="" style="width: 570px; height: 390px" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="mt-5" a href="#" style="background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+          ; color: #ffffff; width: 140px; height: 40px; font-size: 12px; font-weight: 400; border: none">SEE ALL WORK</button>
+        </div>
+      </div>
+    </div>
+
+    <!--======================== SECTION D ========================== -->
+    <section id="footer" style="background-color: #f2f2f2">
+      <div class="container">
+        <div class="row">
+          <div class="col mt-5">
+            <p style="color: #020e35; font-size: 30px; font-weight: 400">FREE CONSULTATION</p>
+            <h1 style="color: #020e35; font-size: 55px; font-weight: 400">You have come all the way here, why don't take the first step and send us an email? <span style="color: #e73587">It's free!</span></h1>
+          </div>
+          <div class="col mt-5">
+            <div class="email">
+              <label for="FormControlInput1" class="form-label" style="color: #2c3241; font-size: 16px; font-weight: 400">Your Email Address</label>
+              <input type="email" class="form-control" id="FormControlInput1" style="height: 48px; width: 554px; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 2px" />
+            </div>
+            <div class="subject">
+              <label for="FormControlInput2" class="form-label mt-3" style="color: #2c3241; font-size: 16px; font-weight: 400">Subject</label>
+              <input type="subject" class="form-control" id="FormControlInput2" style="height: 48px; width: 554px; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 2px" />
+            </div>
+            <div class="message">
+              <label for="FormControlTextarea" class="form-label mt-3" style="color: #2c3241; font-size: 16px; font-weight: 400">Message</label>
+              <textarea class="form-control" id="FormControlTextarea" rows="8" style="height: 168px; width: 554px; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 2px"></textarea>
+            </div>
+            <button class="mt-4" a href="#" style="background: #020e35; color: #ffffff; font-size: 18px; font-weight: 400; height: 48px; width: 554px; border: none">Send a Message</button>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" style="background-color: #020e35; height: 25px">
+        <div class="container mt-5">
+          <p style="color: #ffffff; font-size: 12px; font-weight: 400">2022 © All Rights Reserved by Mesifer and Monalisakim</p>
+        </div>
+      </div>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
